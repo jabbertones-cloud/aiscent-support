@@ -32,3 +32,13 @@ When escalation is necessary, prepare: problem ID; customer-visible symptom; exp
 
 ## Contribution rule
 New public knowledge must be sanitized, useful beyond one private account, sourced/provenanced, and carry `last_verified` / `review_after` where platform behavior can drift.
+
+## Mandatory six-rule learning loop (owner directive, 2026-10-10)
+1. Learn before coding; follow instructions, don't assume the solution.
+2. Git history first: previous attempts, fixes, failures, regressions, lessons.
+3. GitHub research second: proven implementations, actual code, history, tests.
+4. Clone and port; don't reinvent proven solutions.
+5. Research missing information before declaring blockers, in the prescribed order.
+6. Failure? Wait and retry; if still failing, return to Rule 1, not an invented troubleshooting procedure.
+
+**Loop:** Learn -> Git history -> GitHub research -> Clone and port -> Research missing information -> Failure? Wait, retry, return to Learn. Repeat until verified working. No substitute workflow, invented shortcuts, assumptions as evidence, or unverified completion claims.
