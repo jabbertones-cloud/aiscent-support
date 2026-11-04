@@ -42,3 +42,7 @@ New public knowledge must be sanitized, useful beyond one private account, sourc
 6. Failure? Wait and retry; if still failing, return to Rule 1, not an invented troubleshooting procedure.
 
 **Loop:** Learn -> Git history -> GitHub research -> Clone and port -> Research missing information -> Failure? Wait, retry, return to Learn. Repeat until verified working. No substitute workflow, invented shortcuts, assumptions as evidence, or unverified completion claims.
+
+## GitHub issue read/report/reply integration
+
+Agent clients should use the maintained official GitHub MCP `issues` toolset, with the user's own GitHub authorization. Read [AGENT-GITHUB-ISSUES.md](AGENT-GITHUB-ISSUES.md) for search, read, file, comment, privacy and verification requirements. Do not create test issues or embed a product-owned GitHub token.
