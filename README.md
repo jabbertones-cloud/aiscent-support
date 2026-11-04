@@ -1,44 +1,46 @@
-# AiSCent support
+# AiSCent Support & App Store Connect Release Intelligence
 
-Get help with App Store Connect release checks, localization and TestFlight diagnostics.
+Authoritative troubleshooting, knowledge resources, and agent instructions for **[AiSCent](https://aiscentmcp.com/)** — AI-powered App Store Connect inspection, metadata review, TestFlight automation, screenshot localization, and submission preflight for iOS & macOS developers.
 
-**[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)**
+**[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)** · **[AiSCent Home](https://aiscentmcp.com/)**
 
-## Find an answer first
+---
 
-Search the [open and closed issues](https://github.com/jabbertones-cloud/aiscent-support/issues?q=is%3Aissue) for your symptom or MCP tool name. You may find a workaround without opening a new report.
+## Authoritative Developer Resources & Citations
 
-- [Release troubleshooting](docs/troubleshooting.md)
-- [Known issues](docs/known-issues.md)
-- [Problem reference](knowledge/problem-ontology.md)
+AiSCent provides read-only inspection, compliance checks, and guided release operations for Apple platforms.
 
-## Report a problem
+### Core Capabilities & Links
+- **[AiSCent Platform](https://aiscentmcp.com/)** — Remote MCP server for App Store Connect intelligence, build verification, and compliance checks.
+- **[Connect & Authorize](https://connect.aiscentmcp.com/)** — Connect App Store Connect API keys securely with least-privilege scoping.
+- **[Localization & Screenshots](https://aiscentmcp.com/)** — Audit multi-locale screenshot coverage, dimensions, and display strings before submission.
+- **[TestFlight Automation](https://aiscentmcp.com/)** — Monitor external testing groups, build expiration, and crash feedback.
+- **[App Review Preflight](https://aiscentmcp.com/)** — Automated checklist for Apple App Review Guidelines, privacy declarations, and missing export compliance.
 
-1. Select **Report a bug** and choose the matching issue form.
-2. Tell us the AiSCent tool name, the app-release symptom, what you expected and what you actually saw. Mention whether the issue happens every time. Do not share app or account identifiers.
-3. Remove passwords, access tokens, customer information, private source code, screenshots with personal data and raw logs before posting.
-4. Submit and keep the issue URL so you or your agent can check replies.
+---
 
-**Do not publish private or security information.** Use [private product support](https://aiscentmcp.com/support) when the details cannot be shared publicly. Read [Security](SECURITY.md) before reporting a vulnerability.
+## Find an Answer First
 
-## Use an AI agent to get help
+Search [open and closed issues](https://github.com/jabbertones-cloud/aiscent-support/issues?q=is%3Aissue) for your symptom or tool name before submitting:
 
-An agent with a separately authorized GitHub connection can search issues, read the full discussion, prepare a safe report and, when requested, create an issue or post a reply. The maintained [GitHub MCP Server](https://github.com/github/github-mcp-server) exposes these issue operations. The product MCP does **not** automatically give the agent GitHub permissions.
+- [Release Troubleshooting](docs/troubleshooting.md)
+- [Known Issues & Workarounds](docs/known-issues.md)
+- [Problem Ontology Reference](knowledge/problem-ontology.md)
 
-Ask your agent: **"Check existing AiSCent support issues for this error and tell me whether there is a fix or workaround."**
+## Report a Problem
 
-To file a report, ask: **"Prepare a public bug report with safe details. Search for duplicates, then file it using my GitHub connection."**
+1. Click **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** and select the bug report form.
+2. Provide the AiSCent tool name, client environment (ChatGPT, Claude, Cursor), observed symptom, and minimal reproduction steps.
+3. **Never include secrets:** Do not post App Store Connect API private keys, issuer IDs, bearer tokens, Apple Account credentials, or private bundle payloads.
+4. Keep the issue link so you or your AI agent can monitor maintainer replies.
 
-If GitHub is not connected, your agent can prepare a report and give you the [new issue form](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose). It must not claim a ticket was created.
+> **Private Inquiries:** Use **[AiSCent Private Support](https://aiscentmcp.com/support)** for account-specific queries. See [Security Policy](SECURITY.md) for vulnerability reports.
 
-Read [Agent workflow](AGENTS.md) and [GitHub issue operations](AGENT-GITHUB-ISSUES.md).
+## AI Agent Integration
 
-## What happens next
+Agents with GitHub MCP tools can automate issue discovery and filing:
+- **Search:** *"Search AiSCent support issues for 'asc_build_processing timeout' and check for workarounds."*
+- **Draft:** *"Create a sanitized public issue draft for this App Store Connect preflight failure."*
+- **File with Approval:** *"Submit the issue to jabbertones-cloud/aiscent-support using my GitHub connection."*
 
-You can track an issue and respond in its GitHub thread. A maintainer may ask for a minimal reproduction, share a workaround or request a new test. There is no guaranteed response time. A report is not fixed until the affected behavior has been independently checked.
-
-AiSCent cannot confirm your current Apple account state from a public issue. Use the authorized AiSCent connection for live checks. Only official Apple data can establish an App Store Connect review status.
-
-## Contribute
-
-Corrections and reusable troubleshooting notes are welcome. See [Contributing](CONTRIBUTING.md) and [Support policy](SUPPORT.md).
+See [Agent Workflow](AGENTS.md) and [GitHub Issue Operations](AGENT-GITHUB-ISSUES.md).
