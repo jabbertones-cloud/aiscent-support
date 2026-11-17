@@ -1,6 +1,6 @@
 # AiSCent 50-locale release readiness (2026-11-17)
 
-AiSCent 1.3.3 source includes a selectable set of 50 locales for iOS/iPadOS and macOS. Source evidence: [LocalizeShots PR #407](https://github.com/jabbertones-cloud/LocalizeShots/pull/407), merged into [main](https://github.com/jabbertones-cloud/LocalizeShots/commit/fd4037277d3cd88bd6975eab611cdebadfbf1ebb); current source baseline [c132029](https://github.com/jabbertones-cloud/LocalizeShots/commit/c132029d8dcb1d97b042d17d9d08bc040496c13a).
+AiSCent 1.3.3 source includes a selectable set of 50 locales for iOS/iPadOS and macOS. Source evidence: native locale expansion [PR #407](https://github.com/jabbertones-cloud/LocalizeShots/pull/407), and current merged 1.3.3 metadata candidate source [PR #423](https://github.com/jabbertones-cloud/LocalizeShots/pull/423), commit [`6c76ea2`](https://github.com/jabbertones-cloud/LocalizeShots/commit/6c76ea2ec9b08668a27cef941cfb69ef91c16015).
 
 ## Do the additional languages work?
 
@@ -8,7 +8,7 @@ Eleven new locale IDs are registered in native source: `bn-BD`, `gu-IN`, `kn-IN`
 
 ## Is every storefront already on App Store Connect?
 
-No. The native selectable-locale set, App Store Connect listing metadata, screenshot sets and signed App Store binaries are separate deliverables. The Fastlane iOS and macOS metadata trees at the current audited main still contain 39 storefront locale folders; new locale metadata must be translated, checked and created on the correct editable Apple version before publication. Do not infer Apple's current locale inventory from Xcode's `CFBundleLocalizations` count.
+No. The native selectable-locale set, App Store Connect listing metadata, screenshot sets and signed App Store binaries are separate deliverables. The merged Fastlane iOS and macOS metadata trees now each contain 50 **draft** storefront locale folders and 1.3.3 release-note candidates. The 11 new locale descriptions and other storefront fields still include English-source placeholders, and all new notes require linguistic review; no claim of 50 Apple-created records or approved translations is made. The source remains intentionally blocked from App Store Connect reconciliation until version-scoped app-info, metadata, media, and human-review gates are satisfied. Do not infer Apple's current locale inventory from Xcode's `CFBundleLocalizations` count.
 
 At the November 17 readback, iOS version 1.3.2 is `PENDING_DEVELOPER_RELEASE` (already approved; not an editable 1.3.3 record). macOS version 1.3.3 is `PREPARE_FOR_SUBMISSION`. Never overwrite the iOS 1.3.2 approved version to push the new strings. Before any Apple write, re-read the exact version, platform, app ID, locale, approval and live metadata baseline.
 
