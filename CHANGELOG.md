@@ -4,6 +4,7 @@ This changelog tracks material changes to AiSCent's public support/knowledge sys
 
 ## 2026-11-17
 - Documented the native 50-locale source expansion, its 11 unreviewed translation candidates, and the distinction between App Store Connect metadata, Xcode localization, and historical 39-locale screenshot evidence.
+- Updated the source release status after LocalizeShots PR #423 merged 100 platform-specific 1.3.3 release-note candidates with a fail-closed `needsReview` gate. Apple metadata and binaries remain unpublished.
 - Clarified that iPhone Duo capture tooling is developer QA only and is not part of the storefront screenshot release.
 - Kept App Store submission and linguistic approval as independent gates.
 

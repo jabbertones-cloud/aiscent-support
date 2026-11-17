@@ -8,7 +8,7 @@ Authoritative troubleshooting, knowledge resources, and agent instructions for *
 
 ## AiSCent 1.3.3 / 50-locale release status (November 17, 2026)
 
-The native iOS/iPadOS and macOS source includes 50 selectable language targets, expanding the former 39. Eleven new app-language catalogs are development candidates marked `needsReview`, not linguistically approved or published storefront metadata. The older 39-locale screenshot audit remains historical evidence and must not be represented as a completed 50-locale release. See [50-locale readiness and known limits](docs/aiscent-50-locale-release-status.md) for platform-specific status and troubleshooting. No iPhone Duo screenshot assets are part of the public release plan.
+The native iOS/iPadOS and macOS source includes 50 selectable language targets, expanding the former 39. Eleven new app-language catalogs are development candidates marked `needsReview`, not linguistically approved or published storefront metadata. [AiSCent PR #423](https://github.com/jabbertones-cloud/LocalizeShots/pull/423) now merges 50 **draft** App Store metadata folders per platform and 100 version-1.3.3 release-note candidates; these are not Apple-approved or published localizations. The older 39-locale screenshot audit remains historical evidence and must not be represented as a completed 50-locale release. See [50-locale readiness and known limits](docs/aiscent-50-locale-release-status.md) for platform-specific status and troubleshooting. No iPhone Duo screenshot assets are part of the public release plan.
 
 ## Authoritative Developer Resources & Citations
 

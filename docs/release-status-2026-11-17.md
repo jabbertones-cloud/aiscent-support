@@ -11,7 +11,7 @@ _Last checked: November 17, 2026. Review after: November 24, 2026. This page sep
 - The website's **39-storefront / 156-image** example is a **historical verified release-workflow observation**, not a current statement that the product supports only 39 locales.
 - [Merged LocalizeShots PR #407](https://github.com/jabbertones-cloud/LocalizeShots/pull/407) added **50 locale definitions** and native app-language/translation-target selectors across iOS, iPadOS and macOS source. It also recorded new-language strings that still required human review.
 - **50 compiled locale resources do not mean 50 App Store-approved, fully reviewed localizations.** The newly added language candidates and store metadata need review and release checks before publication.
-- [Open translation QA follow-up PR #418](https://github.com/jabbertones-cloud/LocalizeShots/pull/418) addresses Store-locale to Xcode-locale aliases; do not mark pending QA work complete.
+- [Merged LocalizeShots PR #423](https://github.com/jabbertones-cloud/LocalizeShots/pull/423) stages 50 Fastlane metadata folders per platform (100 version-1.3.3 release notes) and corrects ASC-to-Xcode locale aliases. Eleven new descriptions/keywords/subtitles are **unreviewed English source placeholders**, not customer-ready translations. The Mac validator still holds on 352 `needsReview` entries and no missing-locale alias false positives. No Apple write was made.
 
 ## Hosted plugin release candidate
 
@@ -19,9 +19,9 @@ A new hosted MCP package candidate was merged to source on November 17, 2026. It
 
 ## Release readiness is a separate gate
 
-- **macOS 1.3.3:** the [last documented App Store Connect release-plan investigation](https://github.com/jabbertones-cloud/aiscent-mcp/pull/58) found no build attached to the intended version. [Merged archive-build mitigation PR #422](https://github.com/jabbertones-cloud/LocalizeShots/pull/422) limited Xcode build concurrency, but the actual archive run was canceled under disk pressure. **No signed and submitted 1.3.3 macOS package was proven by that change.** Recheck live ASC before stating the current status.
+- **macOS 1.3.3:** Apple's November 17 readback reported `PREPARE_FOR_SUBMISSION`. [PR #422](https://github.com/jabbertones-cloud/LocalizeShots/pull/422) documents a signed exact-PR-head package and Xcode concurrency mitigation, **not an exact-current-main signed upload or App Store submission**. A signed rebuild from the latest main, verified build association, localization review and screenshots remain separate release gates.
 - **iPhone Duo:** [merged PR #409](https://github.com/jabbertones-cloud/LocalizeShots/pull/409) adds strict version-bound diagnostics for live fold/rotation continuity. A merged diagnostic script is **not proof of a customer-shipping Duo experience**.
-- **iOS/iPadOS:** native code and locale work are distinct from TestFlight approval, final store screenshots and public App Store availability. Check each platform and version independently.
+- **iOS/iPadOS:** Apple's November 17 readback reported 1.3.2 `PENDING_DEVELOPER_RELEASE`; this approved version remains untouched. There is no independently confirmed editable iOS 1.3.3 App Store record, attached signed build or 50-locale publication. Do not change the approved 1.3.2 to force the next version.
 
 ## Common support situations
 
