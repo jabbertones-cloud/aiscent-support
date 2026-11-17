@@ -2,7 +2,7 @@
 
 Authoritative troubleshooting, knowledge resources, and agent instructions for **[AiSCent](https://aiscentmcp.com/)** — AI-powered App Store Connect inspection, metadata review, TestFlight automation, screenshot localization, and submission preflight for iOS & macOS developers.
 
-**[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)** · **[AiSCent Home](https://aiscentmcp.com/)**
+**[Native release and locale status](docs/release-status-2026-11-17.md)** · **[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)** · **[AiSCent Home](https://aiscentmcp.com/)**
 
 ---
 
@@ -18,6 +18,14 @@ AiSCent provides read-only inspection, compliance checks, and guided release ope
 - **[App Review Preflight](https://aiscentmcp.com/)** — Automated checklist for Apple App Review Guidelines, privacy declarations, and missing export compliance.
 
 ---
+
+## Native applications and localization readiness
+
+AiSCent has native **iOS, iPadOS and macOS** source work, including **50 locale definitions and selectors**. These are not 50 fully reviewed or App Store-released translations. macOS 1.3.3 build/submission, screenshot QA and platform-specific distribution require independent evidence. Read [dated release and localization status](docs/release-status-2026-11-17.md) for the distinction between merged source, review candidates, and live release.
+
+## AiSCent 1.3.3 and localization status (November 17, 2026)
+
+The [AiSCent 1.3.3 release status](docs/aiscent-1.3.3-localization-status.md) distinguishes the 50 **native locale choices in source** from the 39 historically reviewed App Store metadata locales. Eleven newly supported locales are awaiting linguistic and visual review; they are not yet verified as published App Store localizations. iOS 1.3.2 remains pending developer release, while macOS 1.3.3 is being prepared for submission. **No iPhone Duo screenshots are part of the release assets.** See the linked status page for exact product, version and quality boundaries.
 
 ## Find an Answer First
 
