@@ -13,6 +13,10 @@ _Last checked: November 17, 2026. Review after: November 24, 2026. This page sep
 - **50 compiled locale resources do not mean 50 App Store-approved, fully reviewed localizations.** The newly added language candidates and store metadata need review and release checks before publication.
 - [Open translation QA follow-up PR #418](https://github.com/jabbertones-cloud/LocalizeShots/pull/418) addresses Store-locale to Xcode-locale aliases; do not mark pending QA work complete.
 
+## Hosted plugin release candidate
+
+A new hosted MCP package candidate was merged to source on November 17, 2026. It includes a read-only release-inspection skill and continues to carry 38 localized plugin listing entries. This is separate from the native app's 50 locale definitions. Neither source packaging nor native locale resources establish a newly published ChatGPT plugin, an App Store release, complete human-reviewed translations, or authenticated customer tool access.
+
 ## Release readiness is a separate gate
 
 - **macOS 1.3.3:** the [last documented App Store Connect release-plan investigation](https://github.com/jabbertones-cloud/aiscent-mcp/pull/58) found no build attached to the intended version. [Merged archive-build mitigation PR #422](https://github.com/jabbertones-cloud/LocalizeShots/pull/422) limited Xcode build concurrency, but the actual archive run was canceled under disk pressure. **No signed and submitted 1.3.3 macOS package was proven by that change.** Recheck live ASC before stating the current status.
