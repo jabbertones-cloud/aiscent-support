@@ -2,7 +2,7 @@
 
 Authoritative troubleshooting, knowledge resources, and agent instructions for **[AiSCent](https://aiscentmcp.com/)** — AI-powered App Store Connect inspection, metadata review, TestFlight automation, screenshot localization, and submission preflight for iOS & macOS developers.
 
-**[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)** · **[AiSCent Home](https://aiscentmcp.com/)**
+**[Native release and locale status](docs/release-status-2026-11-17.md)** · **[Search issues](https://github.com/jabbertones-cloud/aiscent-support/issues)** · **[Report a bug](https://github.com/jabbertones-cloud/aiscent-support/issues/new/choose)** · **[Read agent instructions](AGENT-GITHUB-ISSUES.md)** · **[AiSCent Home](https://aiscentmcp.com/)**
 
 ---
 
@@ -18,6 +18,10 @@ AiSCent provides read-only inspection, compliance checks, and guided release ope
 - **[App Review Preflight](https://aiscentmcp.com/)** — Automated checklist for Apple App Review Guidelines, privacy declarations, and missing export compliance.
 
 ---
+
+## Native applications and localization readiness
+
+AiSCent has native **iOS, iPadOS and macOS** source work, including **50 locale definitions and selectors**. These are not 50 fully reviewed or App Store-released translations. macOS 1.3.3 build/submission, screenshot QA and platform-specific distribution require independent evidence. Read [dated release and localization status](docs/release-status-2026-11-17.md) for the distinction between merged source, review candidates, and live release.
 
 ## Find an Answer First
 
