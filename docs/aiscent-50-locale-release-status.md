@@ -6,6 +6,12 @@ AiSCent 1.3.3 source includes a selectable set of 50 locales for iOS/iPadOS and 
 
 Eleven new locale IDs are registered in native source: `bn-BD`, `gu-IN`, `kn-IN`, `ml-IN`, `mr-IN`, `or-IN`, `pa-IN`, `sl-SI`, `ta-IN`, `te-IN`, `ur-PK`. There are 657 translatable native UI strings per language with generated nonempty candidates, but all 11 catalogs are still in Xcode's `needsReview` state. Some strings may fall back to English. This is **not** a certified translation or a claim of localization quality. Native-speaker review, protected terms, placeholders, RTL layout and real-device visual acceptance are required.
 
+## Can the AiSCent MCP discover all 50 locales?
+
+Yes, on the **owner/developer fleet MCP**. [PR #66](https://github.com/jabbertones-cloud/aiscent-mcp/pull/66) synchronized its locale registry with the 50 native identifiers and preserved app-specific scope. On November 17, its merged commit 71635d6 was installed, and the connected MCP returned 50 unique identifiers with a correct filtered Urdu result. Regression checks preserved legacy apps with a smaller declared locale set.
+
+This is **not** confirmation that 50 localized App Store Connect records were created or that the separate customer MCP release was changed. AiSCent's 11 added languages still show **657/657 unreviewed candidate UI strings per language** and a blocked localization release gate. The currently paired MCP repository also cannot be switched to a different app without its normal authorization process.
+
 ## Is every storefront already on App Store Connect?
 
 No. The native selectable-locale set, App Store Connect listing metadata, screenshot sets and signed App Store binaries are separate deliverables. The merged Fastlane iOS and macOS metadata trees now each contain 50 **draft** storefront locale folders and 1.3.3 release-note candidates. The 11 new locale descriptions and other storefront fields still include English-source placeholders, and all new notes require linguistic review; no claim of 50 Apple-created records or approved translations is made. The source remains intentionally blocked from App Store Connect reconciliation until version-scoped app-info, metadata, media, and human-review gates are satisfied. Do not infer Apple's current locale inventory from Xcode's `CFBundleLocalizations` count.

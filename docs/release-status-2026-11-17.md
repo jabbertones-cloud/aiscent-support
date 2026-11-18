@@ -13,6 +13,12 @@ _Last checked: November 17, 2026. Review after: November 24, 2026. This page sep
 - **50 compiled locale resources do not mean 50 App Store-approved, fully reviewed localizations.** The newly added language candidates and store metadata need review and release checks before publication.
 - [Merged LocalizeShots PR #423](https://github.com/jabbertones-cloud/LocalizeShots/pull/423) stages 50 Fastlane metadata folders per platform (100 version-1.3.3 release notes) and corrects ASC-to-Xcode locale aliases. Eleven new descriptions/keywords/subtitles are **unreviewed English source placeholders**, not customer-ready translations. The Mac validator still holds on 352 `needsReview` entries and no missing-locale alias false positives. No Apple write was made.
 
+## Owner AiSCent MCP locale discovery
+
+On November 17, the separate **owner/fleet AiSCent MCP** was merged and installed at [aiscent-mcp PR #66](https://github.com/jabbertones-cloud/aiscent-mcp/pull/66), source commit [71635d6](https://github.com/jabbertones-cloud/aiscent-mcp/commit/71635d6d96a6b11ddcc17cf13ea8f884a3ae42e6). The installed, connected localizeshots_discover_locales tool was independently read back and returned **50** supported App Store Connect locale identifiers (up from 39), including ur-PK from a filtered lookup.
+
+This is **locale discovery and workflow availability**, not a provider-side App Store Connect inventory, certified translation, released iOS/macOS binary, or public plugin update. The owner fleet installation and the customer MCP installation are distinct; the customer installation was preserved. The current local catalog remains paired to a different application, and AiSCent's needsReview translations must not be treated as approved merely because its locale identifiers are discoverable.
+
 ## Hosted plugin release candidate
 
 A new hosted MCP package candidate was merged to source on November 17, 2026. It includes a read-only release-inspection skill and continues to carry 38 localized plugin listing entries. This is separate from the native app's 50 locale definitions. Neither source packaging nor native locale resources establish a newly published ChatGPT plugin, an App Store release, complete human-reviewed translations, or authenticated customer tool access.
@@ -20,7 +26,7 @@ A new hosted MCP package candidate was merged to source on November 17, 2026. It
 ## Release readiness is a separate gate
 
 - **macOS 1.3.3:** Apple's November 17 readback reported `PREPARE_FOR_SUBMISSION`. [PR #422](https://github.com/jabbertones-cloud/LocalizeShots/pull/422) documents a signed exact-PR-head package and Xcode concurrency mitigation, **not an exact-current-main signed upload or App Store submission**. A signed rebuild from the latest main, verified build association, localization review and screenshots remain separate release gates.
-- **iPhone Duo:** [merged PR #409](https://github.com/jabbertones-cloud/LocalizeShots/pull/409) adds strict version-bound diagnostics for live fold/rotation continuity. A merged diagnostic script is **not proof of a customer-shipping Duo experience**.
+- **iPhone Duo:** [PR #409](https://github.com/jabbertones-cloud/LocalizeShots/pull/409) provides live fold/rotation diagnostics, and [PR #426](https://github.com/jabbertones-cloud/LocalizeShots/pull/426) fixed a simulator-readiness false positive. An exact-main AiSCent 1.3.3 simulator executable built on M2 and M3 with identical SHA; M3's dedicated iOS 27.1 Duo initialized, but excessive host load prevented the same-process app test. [Issue #406](https://github.com/jabbertones-cloud/LocalizeShots/issues/406) remains open. This does **not** establish that folding works or authorize Duo screenshots for public use.
 - **iOS/iPadOS:** Apple's November 17 readback reported 1.3.2 `PENDING_DEVELOPER_RELEASE`; this approved version remains untouched. There is no independently confirmed editable iOS 1.3.3 App Store record, attached signed build or 50-locale publication. Do not change the approved 1.3.2 to force the next version.
 
 ## Common support situations
